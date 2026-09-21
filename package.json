@@ -1,0 +1,12 @@
+{
+  "name": "niksera-education-web",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/web", "apps/api"],
+  "scripts": {
+    "dev": "npm run dev --workspace @niksera/web",
+    "dev:web": "npm run dev --workspace @niksera/web",
+    "dev:api": "npm run dev --workspace @niksera/api",
+    "build": "npm run build --workspace @niksera/api && npm run build --workspace @niksera/web"
+  }
+}
